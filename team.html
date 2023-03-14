@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>팀 소개 페이지</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            position: relative;
+            height: 80px;
+        }
+
+        header .logo {
+            top: 23px;
+            left: 30px;
+            position: absolute;
+        }
+
+        .main-image>img {
+            max-width: 100%;
+        }
+
         .main-box {
+            background-color: aquamarine;
             padding: 50px 30px 50px 30px;
-            border: 2px solid black;
         }
+
         .team-desc {
-            background-color: white;
+            background-color: yellow;
+            color: black;
             width: 300px;
+            margin: 30px 0px 30px 0px;
         }
+
         .team-img {
             background-color: aqua;
             float: right;
@@ -21,21 +47,28 @@
             height: 200px;
         }
     </style>
-    
 </head>
+
 <body>
-    <h1>팀 소개 페이지</h1>
+    <header>
+        <h1 class="logo">팀 소개 페이지</h1>
+    </header>
+    <section class="main-image">
+        <img src="./img/IMG_3375.jpeg">
+    </section>
     <div class="main-box">
-        <div class="team-img">사진</div>
         <div class="team-desc">
-            <h3>팀 소개 내용1</h3>
-            <h5>내용</h5>
+            <h3>Chill</h3>
+            <h5>Chill한 7팀 입니다.</h5>
         </div>
         <div class="team-desc">
-            <h3>팀 소개 내용2</h3>
-            <h5>내용</h5>
+            <h3>팀원</h3>
+            <h5>
+                <p>팀장: 진현우</p>
+                <p>팀원: 박소진 임라온 정엘리사 최승원</p>
+            </h5>
         </div>
-        
     </div>
 </body>
+
 </html>
