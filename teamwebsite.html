@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>칠팀사이트다이거야</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="stylemain2.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -28,11 +27,36 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         .gap {
             background-color: transparent;
             height: 500px;
         }
     </style>
+    <script>
+        function hey() {
+            // Get the position of the section
+            const section = document.getElementById("team_photo");
+            const sectionPosition = section.offsetTop;
+
+            // Scroll to the section position
+            window.scrollTo({
+                top: sectionPosition,
+                behavior: "smooth"
+            });
+        }
+        function hey2() {
+            // Get the position of the section
+            const section = document.getElementById("team_member");
+            const sectionPosition = section.offsetTop;
+
+            // Scroll to the section position
+            window.scrollTo({
+                top: sectionPosition,
+                behavior: "smooth"
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -42,39 +66,28 @@
             <img src="https://online.spartacodingclub.kr/v2/assets/icons/logo-active.png" alt="상단로고">
             <nav>
                 <ul class="menu">
-                <li><a href="intro.html">스튜디오 소개</a></li>
-                <li><a href="reservation.html">스튜디오 예약</a></li>
-                <li><a href="">블로그</a></li>
-                <li><a href="">포토 갤러리</a></li>
-                <li><a href="">오시는 길</a></li>
+                    <button onclick="hey()" class="team_main">
+                        <p>팀소개</p>
+                    </button>
+                    <button onclick="hey2()">
+                        <p>팀원소개</p>
+                    </button>
                 </ul>
             </nav>
         </header>
 
         <!-- 메인 페이지 -->
         <div class="main">
-
             <div class="title_txt">
-                <p>Chill한 분위기의 여행을 좋아하는,</p>
+                <p><span>Chill</span>&nbsp;한 분위기의 여행을 좋아하는,</p>
                 <h1><b>Chill Team</b></h1>
             </div>
-        </div>
-
-        <div class="intr">
-            <ul>
-                <button onclick="hey()" class="team_main" a href="">
-                    <p>팀소개</p>
-                </button>
-                <button onclick="hey()">
-                    <p>팀원소개</p>
-                </button>
-            </ul>
         </div>
 
         <div class="gap"></div>
         <!-- 팀 소개 페이지 (사진)-->
         <div class="team_intro">
-            <h1>Chill Team은,</h1>
+            <h2 class="team_h" id="team_photo">Chill Team은, 77맞다</h2>
             <div class="row">
                 <div class="column">
                     <img src="/images/elisa1.jpg" style="width:100%">
@@ -104,11 +117,10 @@
             </div>
         </div>
 
-        <div class="gap"></div>
         <!-- 팀원 소개 페이지 -->
-        <section class="comment-area">
+        <section class="comment-area" id="team_member">
             <div>
-                <h2>Members</h2>
+                <h2 class="mem_h">Chiil, Members</h2>
                 <div class="team_member_wrapper">
                     <ul class="team">
                         <li class="team-item">
@@ -199,8 +211,6 @@
             </div>
         </section>
     </div>
-
-
 </body>
 
 </html>
