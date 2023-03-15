@@ -14,10 +14,10 @@ a {
 
 header {
     background-color: black;
-    padding: 30px 0px 0px 30px;
     width: 100%;
-    height: 100%;
-    display: flex;
+    position: fixed;
+    top: 0px;
+
 
 }
 
@@ -25,17 +25,31 @@ header>div>img {
     width: 100%;
 }
 
+.menu {
+    color: aliceblue;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    
+}
+
+.main {
+    margin-top: 50px;
+}
+
 
 
 .title_txt {
-    position: absolute;
     color: white;
-    top: 15%;
+    top: 0px;
     left: 2%;
+    padding-top: 15%;
 }
 
 .title_txt>p {
     width: 100%;
+    
     margin-left: 15%;
     font-size: 20px;
 
@@ -88,8 +102,6 @@ header>div>img {
     background-color: #ccc;
     border: 2px solid rgb(96, 91, 91);
 }
-
-
 
 
 /* 비디오의 경우 넣을예정
